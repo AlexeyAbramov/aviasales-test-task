@@ -8,6 +8,10 @@ let Price = () =>{
         <div className={styles.wrapper}>
             <Tabs/>
             <Ticket/>
+            <Ticket/>
+            <Ticket/>
+            <Ticket/>
+            <Ticket/>
         </div>
     )
 };
