@@ -1,0 +1,9 @@
+.wrapper{
+    border: 1px solid #BAD332;
+
+    width: 754px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}

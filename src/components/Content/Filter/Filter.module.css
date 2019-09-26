@@ -1,0 +1,70 @@
+.wrapper {
+    width: 232px;
+    height: 252px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+.quantityTitle {
+    padding-top: 20px;
+}
+
+.filterItem:hover,
+.filterItem label:hover {
+    background: #F1FCFF;
+
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    padding-left: 20px;
+}
+
+li {
+    display: flex;
+
+    padding: 10px 0 10px 50px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label{
+    position: relative;
+}
+label:before{
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+
+    left: -30px;
+
+
+    border: 1px solid #9ABBCE;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
+
+input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
