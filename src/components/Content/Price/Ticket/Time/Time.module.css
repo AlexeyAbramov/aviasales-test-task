@@ -14,7 +14,7 @@
 
 .data,
 .duration,
-.transfer{
+.transfer {
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -27,14 +27,17 @@
 }
 
 .time,
-.city{
+.city {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
 
     color: #4A4A4A;
+}
 
+.city {
+    text-transform: uppercase;
 }
 
 .stops {

@@ -4,12 +4,12 @@ import {BrowserRouter} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Content from './components/Content/Content';
 
-function App() {
+function App(props) {
   return (
       <BrowserRouter>
     <div className="App">
       <Header />
-      <Content/>
+      <Content state={props.state}/>
     </div>
       </BrowserRouter>
   );

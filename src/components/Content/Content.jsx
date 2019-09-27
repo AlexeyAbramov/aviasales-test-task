@@ -3,11 +3,11 @@ import styles from './Content.module.css'
 import Filter from './Filter/Filter';
 import Price from './Price/Price';
 
-let Content = () =>{
+let Content = (props) =>{
     return(
         <div className={styles.wrapper}>
             <Filter/>
-            <Price/>
+            <Price state={props.state}/>
         </div>
     )
 };
