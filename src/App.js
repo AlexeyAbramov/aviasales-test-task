@@ -11,7 +11,7 @@ function App(props) {
       <Header />
       <Content state={props.state}
                sort={props.sort}
-               filter={props.filter}/>
+               filterrino={props.filterrino}/>
     </div>
       </BrowserRouter>
   );

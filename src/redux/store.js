@@ -11,13 +11,13 @@ let store = {
                 airCardInfo: [
                     {
                         cities: ["Mow", "Hkt"],
-                        transfer: [1],
+                        transfer: [5],
                         time: ["10:45", "08:00"],
                         way: ["21", "15"],
                         transferCities: ["Hkg", "Jnb"]
                     }, {
                         cities: ["Mow", "Hkt"],
-                        transfer: [0],
+                        transfer: [9],
                         time: ["10:45", "08:00"],
                         way: ["21", "15"],
                         transferCities: ["Hkg", "Jnb"]
@@ -30,8 +30,15 @@ let store = {
     }
 };
 
-export let filter = () =>{
+export let filterrino = () =>{
+    let aby = store.state.contentPage.airCard.prices.filter(function (number) {
+        return number.price > 10000;
+    });
+    store.state.contentPage.airCard.prices = aby;
+    reRender(store);
 };
+// export let filterAll = filter(1000);
+
 
 export let sortPrices = () => {
     store.state.contentPage.airCard.prices.sort(function (a, b) {
