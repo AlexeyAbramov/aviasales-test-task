@@ -9,7 +9,9 @@ function App(props) {
       <BrowserRouter>
     <div className="App">
       <Header />
-      <Content state={props.state}/>
+      <Content state={props.state}
+               sort={props.sort}
+               filter={props.filter}/>
     </div>
       </BrowserRouter>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Time.module.css'
 
 let Time = (props) => {
-    debugger
     return (
         <div className={styles.wrapper}>
             <div className={styles.route}>

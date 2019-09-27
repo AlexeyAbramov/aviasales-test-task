@@ -6,8 +6,9 @@ import Price from './Price/Price';
 let Content = (props) =>{
     return(
         <div className={styles.wrapper}>
-            <Filter/>
-            <Price state={props.state}/>
+            <Filter filter={props.filter}/>
+            <Price state={props.state.contentPage.airCard}
+                   sort={props.sort}/>
         </div>
     )
 };
