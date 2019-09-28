@@ -46,13 +46,13 @@ export let filterrino = () => {
     let currentPrices = store._state.contentPage.airCard.prices.filter(function (a) {
         return a.price > 1050;
     });
-    console.log(store.getState().contentPage.airCard.prices = currentPrices)
+    console.log(store.getState().contentPage.airCard.prices = currentPrices);
     this.reRender(store);
 };
 export let sortPrices = () => {
     store._state.contentPage.airCard.prices.sort(function (a, b) {
         return a.price - b.price;
-    }); 
+    });
     store.reRender(store);
 };
 
