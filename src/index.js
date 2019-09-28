@@ -14,5 +14,5 @@ let reRender = (store) => {
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 reRender(store);
-subscribe(reRender);
+store._subscribe(reRender);
 serviceWorker.unregister();
