@@ -5,7 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import store, {filterrino, sortPrices, subscribe} from './redux/store';
 let reRender = (store) => {
-    ReactDOM.render(<App state={store.state}
+
+    ReactDOM.render(<App state={store.getState()}
                          filterrino={filterrino}
                          sort={sortPrices}/>, document.getElementById('root'));
 };
