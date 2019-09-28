@@ -2,7 +2,7 @@
   "name": "aviasales-test-task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexeyabramov.github.io/aviasales-test-task",
+  "homepage": "https://alexeyabramov.github.io/aviasales-test-task/",
   "dependencies": {
     "create-react-app": "^3.1.2",
     "gh-pages": "^2.1.1",
